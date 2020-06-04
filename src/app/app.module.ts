@@ -9,6 +9,7 @@ import { FooterComponent } from './estructura/footer/footer.component';
 import { PrincipiosObjetivosServiciosComponent } from './paginas/principios-objetivos-servicios/principios-objetivos-servicios.component';
 import { ArticuloComponent } from './estructura/articulos/articulo.component';
 import { ContenidoArticuloConMenuFlotanteComponent } from './estructura/articulos/contenido-articulo-con-menu-flotante/contenido-articulo-con-menu-flotante.component';
+import { TituloArticuloComponent } from './estructura/articulos/titulo-articulo/titulo-articulo.component';
 
 
 @NgModule({
@@ -18,7 +19,8 @@ import { ContenidoArticuloConMenuFlotanteComponent } from './estructura/articulo
     FooterComponent,
     ArticuloComponent,
     PrincipiosObjetivosServiciosComponent,
-    ContenidoArticuloConMenuFlotanteComponent
+    ContenidoArticuloConMenuFlotanteComponent,
+    TituloArticuloComponent
   ],
   imports: [
     BrowserModule,
