@@ -6,12 +6,14 @@ import { RootComponent } from './estructura/root/root.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { HeaderComponent } from './estructura/header/header.component';
 import { FooterComponent } from './estructura/footer/footer.component';
+import { ArticuloComponent } from './estructura/articulo/articulo.component';
 
 @NgModule({
   declarations: [
     RootComponent,
     HeaderComponent,
-    FooterComponent
+    FooterComponent,
+    ArticuloComponent
   ],
   imports: [
     BrowserModule,
