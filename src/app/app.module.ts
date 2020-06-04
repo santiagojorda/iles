@@ -12,6 +12,7 @@ import { ContenidoArticuloConMenuFlotanteComponent } from './estructura/articulo
 import { TituloArticuloComponent } from './estructura/articulos/titulo-articulo/titulo-articulo.component';
 import { MenuFlotanteComponent } from './estructura/menu-flotante/menu-flotante.component';
 import { InicioComponent } from './paginas/inicio/inicio.component';
+import { BannerPrincipalComponent } from './estructura/banner-principal/banner-principal.component';
 
 
 @NgModule({
@@ -24,7 +25,8 @@ import { InicioComponent } from './paginas/inicio/inicio.component';
     ContenidoArticuloConMenuFlotanteComponent,
     TituloArticuloComponent,
     MenuFlotanteComponent,
-    InicioComponent
+    InicioComponent,
+    BannerPrincipalComponent
   ],
   imports: [
     BrowserModule,
