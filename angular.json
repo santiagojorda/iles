@@ -92,10 +92,15 @@
               "src/assets"
             ],
             "styles": [
-              "src/styles.sass",
-              "node_modules/bootstrap/dist/css/boostrap.min.css"
+              "./node_modules/bootstrap/dist/css/boostrap.min.css",
+              "src/styles.sass"
             ],
-            "scripts": []
+            "scripts": [
+              "./node_modules/jquery/dist/jquery.min.js",
+              "./node_modules/popper.js/dist/popper.min.js",
+              "./node_modules/bootstrap/dist/js/boostrap.min.js"
+
+            ]
           }
         },
         "lint": {
