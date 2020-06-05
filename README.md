@@ -1,2 +1,2 @@
 # iles
-Instituto Lationamericano de Estudios Sociales // www.iles.com.ar // info@iles.com.ar
+Instituto Lationamericano de Estudios Sociales
