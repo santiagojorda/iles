@@ -7,13 +7,13 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { HeaderComponent } from './estructura/header/header.component';
 import { FooterComponent } from './estructura/footer/footer.component';
 import { PrincipiosObjetivosServiciosComponent } from './paginas/principios-objetivos-servicios/principios-objetivos-servicios.component';
-import { ArticuloComponent } from './estructura/articulos/articulo.component';
-import { ContenidoArticuloConMenuFlotanteComponent } from './estructura/articulos/contenido-articulo-con-menu-flotante/contenido-articulo-con-menu-flotante.component';
+import { ArticuloConMenuFlotanteComponent } from './estructura/articulos/articulo-con-menu-flotante/articulo-con-menu-flotante.component';
 import { TituloArticuloComponent } from './estructura/articulos/titulo-articulo/titulo-articulo.component';
 import { MenuFlotanteComponent } from './estructura/menu-flotante/menu-flotante.component';
 import { InicioComponent } from './paginas/inicio/inicio.component';
 import { BannerPrincipalComponent } from './estructura/banner-principal/banner-principal.component';
 import { ContenedorPadreComponent } from './estructura/contenedor-padre/contenedor-padre.component';
+import { ContenedorComponent } from './estructura/contenedor/contenedor.component';
 
 
 @NgModule({
@@ -21,14 +21,14 @@ import { ContenedorPadreComponent } from './estructura/contenedor-padre/contened
     RootComponent,
     HeaderComponent,
     FooterComponent,
-    ArticuloComponent,
     PrincipiosObjetivosServiciosComponent,
-    ContenidoArticuloConMenuFlotanteComponent,
+    ArticuloConMenuFlotanteComponent,
     TituloArticuloComponent,
     MenuFlotanteComponent,
     InicioComponent,
     BannerPrincipalComponent,
-    ContenedorPadreComponent
+    ContenedorPadreComponent,
+    ContenedorComponent
   ],
   imports: [
     BrowserModule,
