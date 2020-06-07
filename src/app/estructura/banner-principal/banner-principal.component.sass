@@ -1,5 +1,7 @@
 @import '../../../styles'
 
+$radioDeBorde: 5px
+$alturaBanner: 500px
 
 .container
     display: block
@@ -7,15 +9,14 @@
     width: 100%
 
 .contenedor-padre
-    height: 500px
-    background: #202020
-    border-radius: 5px
+    height: $alturaBanner
+    border-radius: $radioDeBorde
     display: flex
     padding: 0
 
 .opacidad
-    border-top-left-radius: 5px
-    border-bottom-left-radius: 5px
+    border-top-left-radius: $radioDeBorde
+    border-bottom-left-radius: $radioDeBorde
     color: #fff
     text-align: center
     background: rgba(0,0,0,.7)
@@ -34,8 +35,8 @@
     height: 100%
     background-image: url('../../../assets/fondo/banner-principal-presentacion.jpeg')
     background-size: cover
-    border-top-left-radius: 5px
-    border-bottom-left-radius: 5px
+    border-top-left-radius: $radioDeBorde
+    border-bottom-left-radius: $radioDeBorde
     border-right: 6px solid #f3f3f3
     
     h3
@@ -64,3 +65,32 @@
         cursor: pointer
 
 
+.articulos-verticales
+    width: 70%
+    height: 100%
+    border-top-right-radius: $radioDeBorde
+
+    .superior
+        border-top-right-radius: $radioDeBorde
+        border-bottom: 3px solid #f3f3f3
+        height: 50%
+        width: 100%
+
+    .inferior
+        border-bottom-right-radius: $radioDeBorde
+        border-top: 3px solid #f3f3f3
+        height: 50%
+        width: 100%
+        display: flex
+        align-content: center
+
+        .articulo-izquierdo
+            border-right: 3px solid #f3f3f3
+            width: 70%
+            height: 100%
+
+        .articulo-derecho
+            width: 30%
+            height: 100%
+            border-left: 3px solid #f3f3f3
+            border-bottom-right-radius: $radioDeBorde
