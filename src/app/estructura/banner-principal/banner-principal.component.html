@@ -15,10 +15,45 @@
                 </div>
 
                 <div class="articulos-verticales">
-                    <div class="superior"></div>
+                    <div class="superior">
+                        <app-articulo-banner-principal 
+                            titulo = 'Ciudades del aprendizaje'
+                            descripcion = 'Desde el año 2015, el ILES acompaña la municipalidad de Villa María, provincia de Córdoba, en el desarrollo y seguimiento del programa “Villa María, primera Ciudad del Aprendizaje de la Argentina.'
+                            redireccion = '/ciudades-del-aprendizaje'
+                            intervalo = "5"
+                            [imagenes] = "[
+                                '../../../../assets/villa-maria/bailando.jpeg', 
+                                '../../../../assets/villa-maria/paneles.jpeg'
+                            ]">
+                        </app-articulo-banner-principal>
+                    </div>
+
                     <div class="inferior">
-                        <div class="articulo-izquierdo"></div>
-                        <div class="articulo-derecho"></div>
+                        <div class="articulo-izquierdo">
+                            <app-articulo-banner-principal 
+                                titulo = 'Laudato Si´'
+                                descripcion = 'Nuestro instituto ha diseñado una serie de Fascículos sobre la Carta encíclica Laudato Si´ del Santo Padre Francisco sobre el cuidado de la Casa Común, en la cual se realiza una crítica al modelo.'
+                                redireccion = '/laudato-si'
+                                intervalo = "7"
+                                [imagenes] = "[
+                                    '../../../../assets/fasciculos/papa2.png', 
+                                    '../../../../assets/fasciculos/papa3.png',
+                                    '../../../../assets/fasciculos/papa.png'
+                                ]">
+                            </app-articulo-banner-principal>
+                        </div>
+
+                        <div class="articulo-derecho">
+                            <app-articulo-banner-principal 
+                            titulo = 'Investigación y Opinión'
+                            descripcion = '- Expertos del ILES.'
+                            redireccion = '/investigacion-y-opinion'
+                            intervalo = "0"
+                            [imagenes] = "[
+                                '../../../../assets/fondo/banner-principal-investigacion.jpeg'
+                            ]">
+                        </app-articulo-banner-principal>
+                        </div>
                     </div>
                 </div>
             </div>

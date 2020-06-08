@@ -14,6 +14,7 @@ import { InicioComponent } from './paginas/inicio/inicio.component';
 import { BannerPrincipalComponent } from './estructura/banner-principal/banner-principal.component';
 import { ContenedorPadreComponent } from './estructura/contenedor-padre/contenedor-padre.component';
 import { ContenedorComponent } from './estructura/contenedor/contenedor.component';
+import { ArticuloBannerPrincipalComponent } from './estructura/banner-principal/articulo-banner-principal/articulo-banner-principal.component';
 
 
 @NgModule({
@@ -28,7 +29,8 @@ import { ContenedorComponent } from './estructura/contenedor/contenedor.componen
     InicioComponent,
     BannerPrincipalComponent,
     ContenedorPadreComponent,
-    ContenedorComponent
+    ContenedorComponent,
+    ArticuloBannerPrincipalComponent
   ],
   imports: [
     BrowserModule,

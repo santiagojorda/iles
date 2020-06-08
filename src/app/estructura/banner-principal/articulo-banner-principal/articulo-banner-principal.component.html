@@ -1,0 +1,11 @@
+<ngb-carousel [showNavigationArrows]="imagenes.length > 1" [interval]="intervalo * 1000" [showNavigationIndicators]="false">
+    <ng-template ngbSlide *ngFor="let image of imagenes">
+        <div class="picsum-img-wrapper">
+            <img [src]="image">
+        </div>
+        <div class="texto">
+            <h5>{{titulo}}</h5>
+            <p>{{descripcion}} </p>
+        </div>
+    </ng-template>
+  </ngb-carousel>
