@@ -17,6 +17,7 @@ import { ContenedorComponent } from './estructura/contenedor/contenedor.componen
 import { ArticuloBannerPrincipalComponent } from './estructura/banner-principal/articulo-banner-principal/articulo-banner-principal.component';
 import { QuienesSomosComponent } from './paginas/quienes-somos/quienes-somos.component';
 import { TrayectoriaInstitucionalComponent } from './paginas/trayectoria-institucional/trayectoria-institucional.component';
+import { PresidenciaYExpertosComponent } from './paginas/presidencia-y-expertos/presidencia-y-expertos.component';
 
 
 @NgModule({
@@ -34,7 +35,8 @@ import { TrayectoriaInstitucionalComponent } from './paginas/trayectoria-institu
     ContenedorComponent,
     ArticuloBannerPrincipalComponent,
     QuienesSomosComponent,
-    TrayectoriaInstitucionalComponent
+    TrayectoriaInstitucionalComponent,
+    PresidenciaYExpertosComponent
   ],
   imports: [
     BrowserModule,
