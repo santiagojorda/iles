@@ -4,7 +4,11 @@
     <div class="container">
         <div class="row">
             <div class="col-md-9 col-12">
-                <ng-content></ng-content>    
+                <app-titulo-articulo *ngIf='tieneTitulo()' titulo="{{titulo}}"></app-titulo-articulo>
+
+                <div class="articulo">
+                    <ng-content></ng-content>    
+                </div>
             </div>
             
             <!-- firma del menu con los parametros -->

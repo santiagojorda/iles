@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
 
 @Component({
   selector: 'app-articulo-con-menu-flotante',
@@ -7,9 +7,15 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ArticuloConMenuFlotanteComponent implements OnInit {
 
+  @Input() titulo: string = '';
+
   constructor() { }
 
   ngOnInit(): void {
+  }
+
+  tieneTitulo(){
+    return this.titulo;
   }
 
 }
