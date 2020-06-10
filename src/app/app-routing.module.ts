@@ -7,6 +7,7 @@ import { TrayectoriaInstitucionalComponent } from './paginas/trayectoria-institu
 import { PresidenciaYExpertosComponent } from './paginas/presidencia-y-expertos/presidencia-y-expertos.component';
 import { CiudadesDelAprendizajeComponent } from './paginas/ciudades-del-aprendizaje/ciudades-del-aprendizaje.component';
 import { LaudatoSiComponent } from './paginas/laudato-si/laudato-si.component';
+import { InvestigacionYOpinionComponent } from './paginas/investigacion-y-opinion/investigacion-y-opinion.component';
 
 
 const routes: Routes = [
@@ -17,6 +18,7 @@ const routes: Routes = [
   { path: 'presidencia-y-expertos', component: PresidenciaYExpertosComponent},
   { path: 'ciudades-del-aprendizaje', component: CiudadesDelAprendizajeComponent},
   { path: 'laudato-si', component: LaudatoSiComponent},
+  { path: 'investigacion-y-opinion', component: InvestigacionYOpinionComponent},
 
 ];
  

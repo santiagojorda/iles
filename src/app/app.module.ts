@@ -22,6 +22,7 @@ import { CiudadesDelAprendizajeComponent } from './paginas/ciudades-del-aprendiz
 import { SubTituloArticuloComponent } from './estructura/articulos/titulo/sub-titulo-articulo/sub-titulo-articulo.component';
 import { LaudatoSiComponent } from './paginas/laudato-si/laudato-si.component';
 import { ArticuloLaudatoComponent } from './estructura/articulos/articulo-laudato/articulo-laudato.component';
+import { InvestigacionYOpinionComponent } from './paginas/investigacion-y-opinion/investigacion-y-opinion.component';
 
 
 @NgModule({
@@ -44,7 +45,8 @@ import { ArticuloLaudatoComponent } from './estructura/articulos/articulo-laudat
     CiudadesDelAprendizajeComponent,
     SubTituloArticuloComponent,
     LaudatoSiComponent,
-    ArticuloLaudatoComponent
+    ArticuloLaudatoComponent,
+    InvestigacionYOpinionComponent
   ],
   imports: [
     BrowserModule,
