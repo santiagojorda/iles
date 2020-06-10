@@ -11,6 +11,7 @@ export class ArticuloBannerPrincipalComponent implements OnInit {
   @Input() descripcion: string;
   @Input() intervalo: number;
   @Input() estiloDefondo: string;
+  @Input() redireccion: string;
   @Input() imagenes: string[];
   
   constructor() { }

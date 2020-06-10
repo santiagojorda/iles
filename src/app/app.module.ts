@@ -20,6 +20,8 @@ import { TrayectoriaInstitucionalComponent } from './paginas/trayectoria-institu
 import { PresidenciaYExpertosComponent } from './paginas/presidencia-y-expertos/presidencia-y-expertos.component';
 import { CiudadesDelAprendizajeComponent } from './paginas/ciudades-del-aprendizaje/ciudades-del-aprendizaje.component';
 import { SubTituloArticuloComponent } from './estructura/articulos/titulo/sub-titulo-articulo/sub-titulo-articulo.component';
+import { LaudatoSiComponent } from './paginas/laudato-si/laudato-si.component';
+import { ArticuloLaudatoComponent } from './estructura/articulos/articulo-laudato/articulo-laudato.component';
 
 
 @NgModule({
@@ -40,7 +42,9 @@ import { SubTituloArticuloComponent } from './estructura/articulos/titulo/sub-ti
     TrayectoriaInstitucionalComponent,
     PresidenciaYExpertosComponent,
     CiudadesDelAprendizajeComponent,
-    SubTituloArticuloComponent
+    SubTituloArticuloComponent,
+    LaudatoSiComponent,
+    ArticuloLaudatoComponent
   ],
   imports: [
     BrowserModule,
