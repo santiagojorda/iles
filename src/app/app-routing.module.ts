@@ -2,11 +2,14 @@ import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 import { PrincipiosObjetivosServiciosComponent } from './paginas/principios-objetivos-servicios/principios-objetivos-servicios.component';
 import { InicioComponent } from './paginas/inicio/inicio.component';
+import { QuienesSomosComponent } from './paginas/quienes-somos/quienes-somos.component';
 
 
 const routes: Routes = [
   { path: '', component: InicioComponent },
-  { path: 'principios-objetivos-servicios', component: PrincipiosObjetivosServiciosComponent}
+  { path: 'principios-objetivos-servicios', component: PrincipiosObjetivosServiciosComponent},
+  { path: 'quienes-somos', component: QuienesSomosComponent}
+
 ];
  
 @NgModule({

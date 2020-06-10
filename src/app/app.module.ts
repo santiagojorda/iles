@@ -15,6 +15,7 @@ import { BannerPrincipalComponent } from './estructura/banner-principal/banner-p
 import { ContenedorPadreComponent } from './estructura/contenedor-padre/contenedor-padre.component';
 import { ContenedorComponent } from './estructura/contenedor/contenedor.component';
 import { ArticuloBannerPrincipalComponent } from './estructura/banner-principal/articulo-banner-principal/articulo-banner-principal.component';
+import { QuienesSomosComponent } from './paginas/quienes-somos/quienes-somos.component';
 
 
 @NgModule({
@@ -30,7 +31,8 @@ import { ArticuloBannerPrincipalComponent } from './estructura/banner-principal/
     BannerPrincipalComponent,
     ContenedorPadreComponent,
     ContenedorComponent,
-    ArticuloBannerPrincipalComponent
+    ArticuloBannerPrincipalComponent,
+    QuienesSomosComponent
   ],
   imports: [
     BrowserModule,
