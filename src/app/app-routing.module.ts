@@ -5,6 +5,7 @@ import { InicioComponent } from './paginas/inicio/inicio.component';
 import { QuienesSomosComponent } from './paginas/quienes-somos/quienes-somos.component';
 import { TrayectoriaInstitucionalComponent } from './paginas/trayectoria-institucional/trayectoria-institucional.component';
 import { PresidenciaYExpertosComponent } from './paginas/presidencia-y-expertos/presidencia-y-expertos.component';
+import { CiudadesDelAprendizajeComponent } from './paginas/ciudades-del-aprendizaje/ciudades-del-aprendizaje.component';
 
 
 const routes: Routes = [
@@ -13,6 +14,7 @@ const routes: Routes = [
   { path: 'quienes-somos', component: QuienesSomosComponent},
   { path: 'trayectoria-institucional', component: TrayectoriaInstitucionalComponent},
   { path: 'presidencia-y-expertos', component: PresidenciaYExpertosComponent},
+  { path: 'ciudades-del-aprendizaje', component: CiudadesDelAprendizajeComponent},
 
 ];
  

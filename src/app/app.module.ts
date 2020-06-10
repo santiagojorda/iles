@@ -8,7 +8,7 @@ import { HeaderComponent } from './estructura/header/header.component';
 import { FooterComponent } from './estructura/footer/footer.component';
 import { PrincipiosObjetivosServiciosComponent } from './paginas/principios-objetivos-servicios/principios-objetivos-servicios.component';
 import { ArticuloConMenuFlotanteComponent } from './estructura/articulos/articulo-con-menu-flotante/articulo-con-menu-flotante.component';
-import { TituloArticuloComponent } from './estructura/articulos/titulo-articulo/titulo-articulo.component';
+import { TituloArticuloComponent } from './estructura/articulos/titulo/titulo-articulo/titulo-articulo.component';
 import { MenuFlotanteComponent } from './estructura/menu-flotante/menu-flotante.component';
 import { InicioComponent } from './paginas/inicio/inicio.component';
 import { BannerPrincipalComponent } from './estructura/banner-principal/banner-principal.component';
@@ -18,6 +18,8 @@ import { ArticuloBannerPrincipalComponent } from './estructura/banner-principal/
 import { QuienesSomosComponent } from './paginas/quienes-somos/quienes-somos.component';
 import { TrayectoriaInstitucionalComponent } from './paginas/trayectoria-institucional/trayectoria-institucional.component';
 import { PresidenciaYExpertosComponent } from './paginas/presidencia-y-expertos/presidencia-y-expertos.component';
+import { CiudadesDelAprendizajeComponent } from './paginas/ciudades-del-aprendizaje/ciudades-del-aprendizaje.component';
+import { SubTituloArticuloComponent } from './estructura/articulos/titulo/sub-titulo-articulo/sub-titulo-articulo.component';
 
 
 @NgModule({
@@ -36,7 +38,9 @@ import { PresidenciaYExpertosComponent } from './paginas/presidencia-y-expertos/
     ArticuloBannerPrincipalComponent,
     QuienesSomosComponent,
     TrayectoriaInstitucionalComponent,
-    PresidenciaYExpertosComponent
+    PresidenciaYExpertosComponent,
+    CiudadesDelAprendizajeComponent,
+    SubTituloArticuloComponent
   ],
   imports: [
     BrowserModule,
