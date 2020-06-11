@@ -1,51 +1,53 @@
-<div class="container">
-    <div class="row">
-        <div class="col-md-3 col-12">
-            <div class="container-fluid logo">
-                <div class="row">
-                    <div class="col-12 articuloFooter">
-                        <h4>ILES</h4>
-                        <p>Dedicada a promover estudios y propuestas en el ámbito sociocultural y educativo.</p>
-                    </div>
+<app-contenedor-padre>
+    <div class="col-md-3 col-12">
+        <div class="container-fluid logo">
+            <div class="row">
+                <div class="col-12">
+                    <h4>ILES</h4>
+                    <p>Dedicada a promover estudios y propuestas en el ámbito sociocultural y educativo.</p>
                 </div>
             </div>
         </div>
-
-        <div class="col-md-3 col-12 articuloFooter">
-            <h5 class='tituloConLinks'>Acerca de ILES</h5>
-            <ul>
-                <li>
-                    <p><span>•</span> Quienes Somos</p>
-                </li>
-                <li>
-                    <p><span>•</span> Principios rectores, objetivos y servicios</p>
-                </li>
-                <li>
-                    <p><span>•</span> Trayectoria institucional</p>
-                </li>
-                <li>
-                    <p><span>•</span> Presidencia y expertos</p>
-                </li>
-            </ul>
-        </div>
-        <div class="col-md-3 col-12 articuloFooter">
-            <h5 class='tituloConLinks'>Iniciativas</h5>
-            <ul>
-                <li>
-                    <p><span>•</span> Ciudades del aprendizaje</p>
-                </li>
-                <li>
-                    <p><span>•</span> Laudato Si´</p>
-                </li>
-                <li>
-                    <p><span>•</span> Opinion e investigación</p>
-                </li>
-            </ul>
-        </div>
-        <div class="col-md-3 col-12 articuloFooter">
-            <h5 class='tituloConLinks'>Contactanos</h5>
-            <img  src="../../../assets/iconos/email.png" style="width: 15px;">
-            <p >info@iles.com.ar</p>
-        </div>
     </div>
+
+    <div class="col-md-3 col-12">
+        <h5 class='subtitulo'>Acerca de ILES</h5>
+        <ul>
+            <li>
+                <p routerLink='/quienes-somos'>Quienes Somos</p>
+            </li>
+            <li>
+                <p routerLink='/principios-objetivos-servicios'>Principios rectores, objetivos y servicios</p>
+            </li>
+            <li>
+                <p routerLink='/trayectoria-institucional'>Trayectoria institucional</p>
+            </li>
+            <li>
+                <p routerLink='/presidencia-y-expertos'>Presidencia y expertos</p>
+            </li>
+        </ul>
+    </div>
+    <div class="col-md-3 col-12">
+        <h5 class='subtitulo'>Iniciativas</h5>
+        <ul>
+            <li>
+                <p routerLink='/ciudades-del-aprendizaje'>Ciudades del aprendizaje</p>
+            </li>
+            <li>
+                <p routerLink='/laudato-si'>Laudato Si´</p>
+            </li>
+            <li>
+                <p routerLink='/investigacion-y-opinion'>Investigación y opinión</p>
+            </li>
+        </ul>
+    </div>
+    <div class="col-md-3 col-12 articuloFooter">
+        <h5 class='subtitulo'>Contactanos</h5>
+        <img class='iconoContacto' src="../../../assets/iconos/email.png" style="width: 15px;">
+        <p >info@iles.com.ar</p>
+    </div>
+</app-contenedor-padre>
+<div class="autor">
+    <p>Diseñado por Santiago Jorda // sjorda@fi.uba.ar</p>
 </div>
+

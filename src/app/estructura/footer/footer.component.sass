@@ -1,5 +1,5 @@
-@import '../../../styles'
-
+@import '../../../variables-globales'
+@import 'footer-variables'
 
 :host
     background: $colorPrincipal 
@@ -24,30 +24,53 @@
     .logo
         border: none
         margin-bottom: 30px
+        height: 100%
+        border-right: .1px solid #fff
         
         h4
             font-family: Helvetica,Arial,sans-serif
             font-weight: 300
             text-shadow: 0 .1px 0 hsla(0,0%,39.2%,.3)
 
-    .articuloFooter
-        text-align: center
 
-    .articulosConLinks
-        font-size: 20px
+    .subtitulo
+        font-size: 16px
         color: $colorContraste
         font-weight: 500
 
-        ul 
-            list-style: nonea
-            padding: 0
+    ul p:hover
+        transition: .5s
+        color: $colorContraste
 
-            p
-                cursor: pointer
-                width: fit-content
-                padding: 2px 0
-                border-radius: 5px
+    ul 
+        list-style: disc
+        list-style-position: inside
+        font-size: 14px
+        padding: 0
 
-                span
-                    margin-right: 5px
-                    font-size: 10px
+        p
+            cursor: pointer
+            width: fit-content
+            padding: 2px 0
+            border-radius: 5px
+            
+            span
+                margin-right: 5px
+                font-size: 10px
+
+    .iconoContacto
+        width: 15px
+        margin-right: 10px
+        display: inline-block
+
+
+    .autor 
+        display: flex
+        align-items: center
+        justify-content: center
+        height: $alturaAutorFooter
+        background: $colorContraste
+        width: 100%
+        text-align: center
+        color: #bdbdbd
+        margin-top: 20px
