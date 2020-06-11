@@ -1,5 +1,11 @@
 @import '../../../styles'
-@import 'variables-banner-principal.sass'
+
+$radioDeBorde: 5px
+$alturaBanner: 500px
+$tamanioBordeArticulo: 3px
+$estiloBordeArticulo: solid #f3f3f3
+$bordeArticulo: $tamanioBordeArticulo $estiloBordeArticulo
+$bordeDobleArticulo: calc(#{$tamanioBordeArticulo}*2) $estiloBordeArticulo
 
 .container
     display: block
@@ -31,7 +37,7 @@
 .presentacion
     width: 30%
     height: 100%
-    background-image: url('../../../assets/fondo/banner-principal-presentacion.jpeg')
+    background-image: url('/../../../assets/fondo/banner-principal-presentacion.jpeg')
     background-size: cover
     border-top-left-radius: $radioDeBorde
     border-bottom-left-radius: $radioDeBorde
