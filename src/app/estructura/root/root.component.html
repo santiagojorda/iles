@@ -2,7 +2,7 @@
 <app-header></app-header>
 
 <div class='cuerpo'>
-    <router-outlet></router-outlet>
+    <router-outlet (activate)="redireccionar($event)"></router-outlet>
 </div>
 
 <!-- <app-footer></app-footer> -->
