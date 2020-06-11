@@ -1,7 +1,5 @@
 @import '../../../styles'
-
-$radioDeBorde: 5px
-$alturaBanner: 500px
+@import 'variables-banner-principal.sass'
 
 .container
     display: block
@@ -37,7 +35,7 @@ $alturaBanner: 500px
     background-size: cover
     border-top-left-radius: $radioDeBorde
     border-bottom-left-radius: $radioDeBorde
-    border-right: 6px solid #f3f3f3
+    border-right: calc(#{$tamanioBordeArticulo}*2) solid #f3f3f3
     
     h3
         font-size: 20px
