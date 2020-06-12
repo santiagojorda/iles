@@ -2,40 +2,37 @@
 <div class="container">
     <div class="row">
         <header class="col-12">
-            <div class="logo" routerLink='/'></div>
+            <div class="logo" routerlink='/'></div>
             <div class="menu-wrap">
                 <!-- <input type="checkbox" class='toggler'>
                 <div class="hamburguer">
-                    <div></div>
-                </div>
-                <div class="menu">
-                    <div>
-                        <div></div>
-                    </div>
-                    <ul>
-                        <li>
-                            <p class='link'><span>•</span> Inicio</p>
-                        </li>
-                        <li>
-                            <p class='link'><span>•</span> Acerca de Iles</p>
-                            <ul>
-                                <li><p class="sub-link"><span>•</span>Quienes somos</p></li>
-                                <li><p class="sub-link"><span>•</span>Principios rectores, objetivos y servicios</p></li>
-                                <li><p class="sub-link"><span>•</span>Trayectoria institucional</p></li>
-                                <li><p class="sub-link"><span>•</span>Presidencia y expertos</p></li>
-                            </ul>
-                        </li>
-
-                        <li>
-                            <p class="link"><span>•</span> Iniciativas</p>
-                            <ul>
-                                <li><p class="sub-link"><span>•</span>Ciudades del aprendizaje</p></li>
-                                <li><p class="sub-link"><span>•</span>Laudato Si´</p></li>
-                                <li><p class="sub-link"><span>•</span>Investigación y Opinión</p></li>
-                            </ul>
-                        </li>
-                    </ul>
+                    <div></div> 
                 </div> -->
+
+                <ul class='menu'>
+                    <li>
+                        <p routerLink='/'>Inicio</p>
+                    </li>
+                    
+                    <li>
+                        <p routerLink='/quienes-somos'>Acerca de Iles</p>
+                        <ul class='sub-menu'>
+                            <li routerLink='/quienes-somos'><p class="sub-link">Quienes somos</p></li>
+                            <li routerLink='/principios-objetivos-servicios'><p class="sub-link">Principios rectores, objetivos y servicios</p></li>
+                            <li routerLink='/trayectoria-institucional'><p class="sub-link">Trayectoria institucional</p></li>
+                            <li routerLink='/presidencia-y-expertos'><p class="sub-link">Presidencia y expertos</p></li>
+                        </ul>
+                    </li>
+
+                    <li>
+                        <p routerLink='/ciudades-del-aprendizaje'>Iniciativas</p>
+                        <ul class='sub-menu'>
+                            <li routerLink='/ciudades-del-aprendizaje'><p class="sub-link">Ciudades del aprendizaje</p></li>
+                            <li routerLink='/laudato-si'><p class="sub-link">Laudato Si´</p></li>
+                            <li routerLink='/investigacion-y-opinion'><p class="sub-link">Investigación y Opinión</p></li>
+                        </ul>
+                    </li>
+                </ul>
 
             </div>
         </header>

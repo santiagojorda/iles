@@ -1,5 +1,5 @@
-@import '../../../styles'
-
+@import './../../../variables-globales'
+@import './header-variables'
 
 :host
     border-top: 5px solid $colorPrincipal
@@ -19,12 +19,80 @@
         align-items: center
 
     .logo
-        background-image: url('../../../assets/logo.jpg')
+        background-image: url('./../../../assets/logo.jpg')
         background-size: cover
         background-repeat: no-repeat
         height: 80px
         width: 160px
         cursor: pointer
+
+    .menu
+        height: 100%
+        display: flex
+        align-items: center
+        list-style: disc
+        color: black
+        justify-content: flex-end
+        margin: 0
+        width: 100%
+
+        li
+            padding: 10px 15px
+            color: $colorPrincipal
+            cursor: pointer
+            border-radius: 2px
+
+            .link
+                margin: 0
+                font-size: 1rem             
+
+            .sub-menu
+                display: none
+
+
+
+    li
+        margin: 0 0 0 18px
+        list-style-position: inside
+        display: list-item
+
+    .menu li:hover > .sub-menu
+        display: block
+
+
+    p
+        margin: 0
+        color: black
+
+
+    .menu li:hover > p
+        color: $colorPrincipal
+
+    .sub-menu
+        padding: 0
+        right: 0
+        display: none
+        min-width: 140px
+        background: #fff
+        position: absolute
+        z-index: 999
+        border: .1px solid #ccc
+        box-shadow: 0 0 5px 0 #ccc
+        border-radius: 3px
+        width: auto
+        list-style: disc
+
+        .sub-link
+            font-size: 14px
+            font-weight: 400
+            letter-spacing: 0
+
+
+
+
+
+
+
 
     // .menu-wrap, .menu > div, .menu > div > div
     //     height: 100%
