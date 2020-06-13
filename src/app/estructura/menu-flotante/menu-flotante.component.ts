@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
 
 @Component({
   selector: 'app-menu-flotante',
@@ -7,9 +7,31 @@ import { Component, OnInit } from '@angular/core';
 })
 export class MenuFlotanteComponent implements OnInit {
 
-  constructor() { }
+  @Input() articulosAOcultar : string;
 
+  hayCiudades = true;
+  hayLaudatos = true;
+  hayInvestigacion = true;
+
+  constructor() { 
+  }
+  
   ngOnInit(): void {
+    this.ocultarArticulos();
+    console.log(this.articulosAOcultar);
+  }
+
+  ocultarArticulos(){
+    if(this.articulosAOcultar == 'Ciudades')
+      this.hayCiudades = false;
+    else if (this.articulosAOcultar == "Laudatos")
+      this.hayLaudatos = false;
+    else if (this.articulosAOcultar == "Investigacion")
+      this.hayInvestigacion = false
+  }
+
+  hay(articuloOculto){
+    return articuloOculto;
   }
 
 }
