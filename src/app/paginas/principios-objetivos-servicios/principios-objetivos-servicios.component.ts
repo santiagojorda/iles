@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Title } from '@angular/platform-browser';
 
 @Component({
   selector: 'app-principios-objetivos-servicios',
@@ -7,9 +8,12 @@ import { Component, OnInit } from '@angular/core';
 })
 export class PrincipiosObjetivosServiciosComponent implements OnInit {
 
-  constructor() { }
+  constructor(private title: Title) { 
+
+  }
 
   ngOnInit(): void {
+    this.title.setTitle('ILES :: Principios rectores, objetivos y servicios');
   }
 
 }
