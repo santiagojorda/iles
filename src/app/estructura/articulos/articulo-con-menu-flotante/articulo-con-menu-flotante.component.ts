@@ -8,7 +8,7 @@ import { Component, OnInit, Input } from '@angular/core';
 export class ArticuloConMenuFlotanteComponent implements OnInit {
 
   @Input() titulo: string = '';
-  @Input() articulosAOcultar : string[] = [];
+  @Input() articulosAOcultarMenu : string[];
 
   constructor() { }
 

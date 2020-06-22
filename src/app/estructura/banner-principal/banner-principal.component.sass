@@ -1,11 +1,5 @@
 @import '../../../variables-globales'
-
-$radioDeBorde: 5px
-$alturaBanner: 500px
-$tamanioBordeArticulo: 3px
-$estiloBordeArticulo: solid #f3f3f3
-$bordeArticulo: $tamanioBordeArticulo $estiloBordeArticulo
-$bordeDobleArticulo: calc(#{$tamanioBordeArticulo}*2) $estiloBordeArticulo
+@import './banner-principal-variables'
 
 .container
     display: block
@@ -14,13 +8,13 @@ $bordeDobleArticulo: calc(#{$tamanioBordeArticulo}*2) $estiloBordeArticulo
 
 .contenedor-padre
     height: $alturaBanner
-    border-radius: $radioDeBorde
+    // border-radius: $radioDeBorde
     display: flex
     padding: 0
 
 .opacidad
-    border-top-left-radius: $radioDeBorde
-    border-bottom-left-radius: $radioDeBorde
+    // border-top-left-radius: $radioDeBorde
+    // border-bottom-left-radius: $radioDeBorde
     color: #fff
     text-align: center
     background: rgba(0,0,0,.7)
@@ -39,8 +33,8 @@ $bordeDobleArticulo: calc(#{$tamanioBordeArticulo}*2) $estiloBordeArticulo
     height: 100%
     background-image: url('/../../../assets/fondo/banner-principal-presentacion.jpeg')
     background-size: cover
-    border-top-left-radius: $radioDeBorde
-    border-bottom-left-radius: $radioDeBorde
+    // border-top-left-radius: $radioDeBorde
+    // border-bottom-left-radius: $radioDeBorde
     border-right: calc(#{$tamanioBordeArticulo}*2) solid #f3f3f3
     
     h3
@@ -57,7 +51,7 @@ $bordeDobleArticulo: calc(#{$tamanioBordeArticulo}*2) $estiloBordeArticulo
         background: #fff
 
     .boton
-        background: #00a959
+        background: $colorPrincipal
         margin: 10px 0 0
         padding: 5px 10px
         border-radius: 2px
@@ -72,29 +66,61 @@ $bordeDobleArticulo: calc(#{$tamanioBordeArticulo}*2) $estiloBordeArticulo
 .articulos-verticales
     width: 70%
     height: 100%
-    border-top-right-radius: $radioDeBorde
+
+    .superior, .inferior
+        height: 50%
+        width: 100%
+
+        .articulo-izquierdo, .articulo-derecho
+            height: 100%
+
+@media (min-width: $anchoMinPantallaCambioBannerPrincipal)
 
     .superior
-        border-top-right-radius: $radioDeBorde
         border-bottom: 3px solid #f3f3f3
-        height: 50%
-        width: 100%
 
     .inferior
-        border-bottom-right-radius: $radioDeBorde
         border-top: 3px solid #f3f3f3
-        height: 50%
-        width: 100%
         display: flex
         align-content: center
 
-        .articulo-izquierdo
-            border-right: 3px solid #f3f3f3
-            width: 70%
-            height: 100%
+    .articulo-izquierdo
+        width: 70%
 
-        .articulo-derecho
-            width: 30%
-            height: 100%
-            border-left: 3px solid #f3f3f3
-            border-bottom-right-radius: $radioDeBorde
+
+    .articulo-derecho
+        width: 30%
+        border-left: 3px solid #f3f3f3
+
+
+@media (max-width: $anchoMaxPantallaCambioBannerPrincipal)
+    
+
+    :host , .contenedor-padre
+        display: block
+        width: 100%
+        padding: 0
+        height: 100%
+        margin: 0
+
+    .presentacion, .articulos-verticales, .superior, .inferior
+        width: 100%
+        border-radius: 0
+        border: none
+
+    .presentacion
+        height: 400px
+        white-space: pre-line
+        border: none
+
+        p
+            width: 200px
+            margin: 0 auto
+
+    .superior, .inferior
+        height: 100%
+    
+    .articulo-izquierdo, .articulo-derecho
+        width: 100%
+
+    

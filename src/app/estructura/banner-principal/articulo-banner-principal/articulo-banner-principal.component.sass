@@ -1,20 +1,23 @@
 @import '../../../../variables-globales'
 @import '../banner-principal.component.sass'
+@import '../banner-principal-variables'
+
 
 $alturaContenedorTexto: 80px
+
 $tamanioBordeArticulo: 3px
-$alturaArticuloBanner: calc( (#{$alturaBanner}/2) - #{$tamanioBordeArticulo})
+$alturaArticuloBannerEscritorio: calc( (#{$alturaBanner}/2) - #{$tamanioBordeArticulo})
 
 :host
     display: block
-    height: $alturaArticuloBanner
+    height: $alturaArticuloBannerEscritorio
 
 :host:active
     outline: none
 
 img
     object-fit: cover
-    height: calc( #{$alturaArticuloBanner} - #{$alturaContenedorTexto} )
+    height: calc( #{$alturaArticuloBannerEscritorio} - #{$alturaContenedorTexto} )
     width: 100%
 
 .contenedorTexto:hover
@@ -50,4 +53,9 @@ img
         -webkit-box-orient: vertical
         overflow: hidden
         text-overflow: ellipsis
-        
+
+@media (min-width: $anchoMinPantallaCambioBannerPrincipal)
+
+
+
+@media (max-width: $anchoMaxPantallaCambioBannerPrincipal)

@@ -1,4 +1,5 @@
 import { Component, OnInit, Input } from '@angular/core';
+import { ColeccionArticulosMenu } from './coleccion-articulos-menu';
 
 @Component({
   selector: 'app-menu-flotante',
@@ -7,31 +8,41 @@ import { Component, OnInit, Input } from '@angular/core';
 })
 export class MenuFlotanteComponent implements OnInit {
 
-  @Input() articulosAOcultar : string;
+  coleccionArticulos = new ColeccionArticulosMenu();
 
-  hayCiudades = true;
-  hayLaudatos = true;
-  hayInvestigacion = true;
+  @Input() articulosAOcultar : string[];
+  // @Input() articulosAOcultar : string;
+
 
   constructor() { 
   }
   
   ngOnInit(): void {
-    this.ocultarArticulos();
-    console.log(this.articulosAOcultar);
+    this.eliminarArticulos();
+    // this.imprimirArticulos();
   }
 
-  ocultarArticulos(){
-    if(this.articulosAOcultar == 'Ciudades')
-      this.hayCiudades = false;
-    else if (this.articulosAOcultar == "Laudatos")
-      this.hayLaudatos = false;
-    else if (this.articulosAOcultar == "Investigacion")
-      this.hayInvestigacion = false
+  // imprimirArticulos(){
+  //   console.log(this.coleccionArticulos.obtenerVista(0));
+  // }
+
+  eliminarArticulos(){
+    for(let i in this.articulosAOcultar){
+      this.coleccionArticulos.eliminarArticulo(this.articulosAOcultar[i]);
+    }
   }
 
-  hay(articuloOculto){
-    return articuloOculto;
-  }
+  // ocultarArticulos(){
+  //   if(this.articulosAOcultar == 'Ciudades')
+  //     this.hayCiudades = false;
+  //   else if (this.articulosAOcultar == "Laudatos")
+  //     this.hayLaudatos = false;
+  //   else if (this.articulosAOcultar == "Investigacion")
+  //     this.hayInvestigacion = false
+  // }
+
+  // hay(articuloOculto){
+  //   return articuloOculto;
+  // }
 
 }

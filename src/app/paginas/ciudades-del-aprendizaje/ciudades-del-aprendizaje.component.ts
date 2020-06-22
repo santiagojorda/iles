@@ -8,8 +8,9 @@ import { Title } from '@angular/platform-browser';
 })
 export class CiudadesDelAprendizajeComponent implements OnInit {
 
-  constructor(private title: Title) {
+  articulosAOcultar = ["ciudades", "investigacion"];
 
+  constructor(private title: Title) {
   }
 
   ngOnInit(): void {

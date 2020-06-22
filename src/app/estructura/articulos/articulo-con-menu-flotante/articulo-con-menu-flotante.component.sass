@@ -1,4 +1,4 @@
-
+@import '../articulos-variables'
 
 :host 
     width: 100%
@@ -9,6 +9,14 @@
     .col-3
         padding: 0
 
+@media (min-width: $anchoMinCambioPantallaArticulos)
     .articulo 
         padding-right: 20px
         padding-left: 10px
+
+@media (max-width: $anchoMaxCambioPantallaArticulos)
+    .articulo
+        padding: 0
+
+    .menu-flotante
+        display: none

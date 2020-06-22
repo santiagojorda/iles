@@ -1,6 +1,8 @@
 @import './../../../variables-globales'
 @import './header-variables'
 
+
+    
 :host
     border-top: 5px solid $colorPrincipal
     position: fixed
@@ -19,12 +21,9 @@
         align-items: center
 
     .logo
-        background-image: url('./../../../assets/logo.jpg')
-        background-size: cover
-        background-repeat: no-repeat
-        height: 80px
-        width: 160px
         cursor: pointer
+        height: 80px
+        width: auto
 
     .menu
         height: 100%
@@ -39,7 +38,6 @@
         li
             padding: 10px 15px
             color: $colorPrincipal
-            cursor: pointer
             border-radius: 2px
 
             .link
@@ -63,6 +61,39 @@
     p
         margin: 0
         color: black
+        font-weight: 400
+
+    // .menu-wrap, .menu > div, .menu > div > div
+    //     height: 100%
+
+    // .toggler
+    //     display: none
+
+    // .menu-wrap > ul
+    //     height: 100% 
+    //     display: flex 
+    //     align-items: center 
+    //     justify-content: flex-end 
+    //     margin: 0 
+    //     width: 100% 
+
+    // .menu-wrap > ul > li 
+    //     margin: 0 0 0 18px
+
+    //     display: none
+    // .sub-link
+    //     display: none
+
+@media (min-width: $anchoMinPantallaCambioHeader)
+
+    .hamburguesa, .toggler
+        display: none
+
+    .menu, .menu-wrap, .menu-wrap div, .menu-wrap div div
+        height: 100%
+
+    .menu li
+        cursor: pointer
 
 
     .menu li:hover > p
@@ -87,31 +118,124 @@
             font-weight: 400
             letter-spacing: 0
 
+@media (max-width: $anchoMaxPantallaCambioHeader)
+
+    :host
+        height: $alturaHeaderMovil
+
+        .container, .row
+            height: 100%
 
 
+    .logo
+        object-fit: contain
+        width: 190px !important
+        height: 60px !important
 
 
+    .menu-wrap 
+        height: inherit
+        z-index: 1
+
+    .hamburguesa, .hamburguesa > div
+        position: relative
+        display: flex
+        align-items: center
+        justify-content: center
+
+    .hamburguesa
+        z-index: 1
+        width: $anchoHamburguesa
+        height: $anchoHamburguesa
+        padding: 10px
+        background: $colorPrincipal
+        border-radius: 3px
+
+        div
+            flex: none
+            width: 100%
+            height: 2px
+            background: #fff
+
+    .hamburguesa > div:after, .hamburguesa > div:before
+        content: ""
+        position: absolute
+        z-index: 1
+        top: -7px
+        width: 100%
+        height: 2px
+        background: inherit
+
+    .hamburguesa > div:after
+        top: 7px
+
+    .menu
+        display: none
+
+    .menu-wrap .toggler
+        z-index: 2
+        display: block
+        position: absolute
+        cursor: pointer
+        width: $anchoHamburguesa
+        height: $anchoHamburguesa
+        opacity: 0
+
+    .menu p 
+        width: fit-content
+        cursor: pointer
+
+    .menu p:focus .menu
+        visibility: hidden
+
+    .menu, .menu > div
+        display: flex
+        align-items: center
+        justify-content: center
+
+    ul, li
+        list-style-type: none
+
+    .menu-wrap .menu
+        position: fixed
+        top: 0
+        left: 0
+        width: 100%
+        height: 100%
+        visibility: hidden
+        overflow: hidden
+        padding: 0
+        background: $colorContraste
+        display: flex
+        align-items: flex-start
+        justify-content: center
+        flex-direction: column
+        transform: scale(1)
+        
+        li ul 
+            margin-top: 10px
+            display: block
+            position: relative
+            width: 100%
+            padding: 0
+
+    .menu > li > p
+        text-transform: uppercase
+    
+    .menu p
+        color: white
 
 
+    .toggler:checked + .hamburguesa > div
+        transform: rotate(135deg)
 
-    // .menu-wrap, .menu > div, .menu > div > div
-    //     height: 100%
+    .toggler:checked:hover + .hamburguesa > div
+        transform: rotate(225deg)
 
-    // .toggler
-    //     display: none
+    .toggler:checked + .hamburguesa > div:after, .toggler:checked + .hamburguesa > div:before
+        top: 0
+        transition: 0s
+        transform: rotate(90deg)
 
-    // .menu-wrap > ul
-    //     height: 100% 
-    //     display: flex 
-    //     align-items: center 
-    //     justify-content: flex-end 
-    //     margin: 0 
-    //     width: 100% 
-
-    // .menu-wrap > ul > li 
-    //     margin: 0 0 0 18px
-
-    //     display: none
-    // .sub-link
-    //     display: none
-
+    .toggler:checked ~ .menu
+        visibility: visible

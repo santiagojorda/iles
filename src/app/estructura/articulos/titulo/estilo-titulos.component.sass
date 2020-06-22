@@ -1,5 +1,10 @@
 @import '../../../../variables-globales'
-
+@import '../articulos-variables.sass'
  
 h1, h3, h5
     font-weight: 300 
+
+@media (max-width: $anchoMaxCambioPantallaArticulos)
+    h1, h3, h5
+        white-space: pre-line
+        text-align: center

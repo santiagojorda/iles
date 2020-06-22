@@ -25,8 +25,7 @@
         border: none
         margin-bottom: 30px
         height: 100%
-        border-right: .1px solid #fff
-        
+
         h4
             font-family: Helvetica,Arial,sans-serif
             font-weight: 300
@@ -68,9 +67,35 @@
         display: flex
         align-items: center
         justify-content: center
-        height: $alturaAutorFooter
         background: $colorContraste
         width: 100%
         text-align: center
         color: #bdbdbd
         margin-top: 20px
+
+@media (min-width: $anchoMinPantallaCambioFooter)
+
+    .logo
+        border-right: .1px solid #fff
+        
+    .autor
+        height: $alturaAutorFooterEscritorio
+
+
+@media (max-width: $anchoMaxPantallaCambioFooter)
+
+    :host 
+        height: $alturaFooterMovil
+
+    .autor
+        height: $alturaAutorFooterMovil
+
+    .logo
+        border: none
+        margin-bottom: 30px
+
+    article
+        text-align: center
+
+    article:not(:last-child)
+        margin-bottom: 30px

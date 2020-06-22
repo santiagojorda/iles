@@ -24,7 +24,6 @@ import { LaudatoSiComponent } from './paginas/laudato-si/laudato-si.component';
 import { ArticuloLaudatoComponent } from './estructura/articulos/articulo-laudato/articulo-laudato.component';
 import { InvestigacionYOpinionComponent } from './paginas/investigacion-y-opinion/investigacion-y-opinion.component';
 
-
 @NgModule({
   declarations: [
     RootComponent,

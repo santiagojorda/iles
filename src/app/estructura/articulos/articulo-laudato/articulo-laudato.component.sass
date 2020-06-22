@@ -1,5 +1,5 @@
 @import '../../../../variables-globales'
-
+@import '../articulos-variables'
 
 .laudato, img
     width: 100%
@@ -20,7 +20,7 @@ img
     width: 100%
     display: flex
     background: $colorContraste
-    border-radius: 5px
+    border-radius: 3px
     box-shadow: 0 2px 5px 0 #ccc
     color: #fff
     align-items: center
@@ -39,4 +39,11 @@ img
     background: $colorPrincipal
     transition: .4s
 
+
+@media (min-width: $anchoMinCambioPantallaArticulos)
+
+
+@media (max-width: $anchoMaxCambioPantallaArticulos)
+    h3
+        font-size: 15px !important
     
