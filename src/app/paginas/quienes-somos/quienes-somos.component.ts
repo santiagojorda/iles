@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Title } from '@angular/platform-browser';
+import { ColeccionPaginas } from '../../coleccion-paginas'
 
 @Component({
   selector: 'app-quienes-somos',
@@ -8,12 +9,16 @@ import { Title } from '@angular/platform-browser';
 })
 export class QuienesSomosComponent implements OnInit {
 
+
+  coleccionPaginas = new ColeccionPaginas; 
+  tituloPagina = this.coleccionPaginas.obtenerNombrePagina(2);
+
   constructor(private title: Title) {
 
   }
 
   ngOnInit(): void {
-    this.title.setTitle('ILES :: Quiénes somos');
+    this.title.setTitle('ILES :: ' + this.tituloPagina);
   }
 
 }

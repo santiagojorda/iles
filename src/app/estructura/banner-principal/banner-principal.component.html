@@ -10,16 +10,16 @@
                         <h3>ILES</h3>
                         <hr>
                         <p>Dedicada a promover estudios y propuestas en el ámbito sociocultural de la Argentina y Latinoamérica.</p>
-                        <div routerLink="/quienes-somos" class="boton"s>Acerca de nosotros</div>
+                        <div routerLink="{{this.coleccionPaginas.obtenerDireccion(2)}}" class="boton"s>Acerca de nosotros</div>
                     </div>
                 </div>
 
                 <div class="articulos-verticales">
                     <div class="superior">
                         <app-articulo-banner-principal 
-                            titulo = 'Ciudades del aprendizaje'
+                            titulo = '{{this.coleccionPaginas.obtenerNombrePagina(5)}}'
                             descripcion = 'Desde el año 2015, el ILES acompaña la municipalidad de Villa María, provincia de Córdoba, en el desarrollo y seguimiento del programa “Villa María, primera Ciudad del Aprendizaje de la Argentina.'
-                            redireccion = '/ciudades-del-aprendizaje'
+                            redireccion = '{{this.coleccionPaginas.obtenerDireccion(5)}}'
                             intervalo = "5"
                             [imagenes] = "[
                                 '../../../../assets/villa-maria/bailando.jpeg', 
@@ -31,9 +31,9 @@
                     <div class="inferior">
                         <div class="articulo-izquierdo">
                             <app-articulo-banner-principal 
-                                titulo = 'Laudato Si´'
+                                titulo = '{{this.coleccionPaginas.obtenerNombrePagina(6)}}'
                                 descripcion = 'Nuestro instituto ha diseñado una serie de Fascículos sobre la Carta encíclica Laudato Si´ del Santo Padre Francisco sobre el cuidado de la Casa Común, en la cual se realiza una crítica al modelo.'
-                                redireccion = '/laudato-si'
+                                redireccion = '{{this.coleccionPaginas.obtenerDireccion(6)}}'
                                 intervalo = "7"
                                 [imagenes] = "[
                                     '../../../../assets/fasciculos/papa2.png', 
@@ -44,9 +44,9 @@
 
                         <div class="articulo-derecho">
                             <app-articulo-banner-principal 
-                            titulo = 'Investigación y Opinión'
+                            titulo = '{{this.coleccionPaginas.obtenerNombrePagina(7)}}'
                             descripcion = '- Expertos del ILES.'
-                            redireccion = '/investigacion-y-opinion'
+                            redireccion = '{{this.coleccionPaginas.obtenerDireccion(7)}}'
                             intervalo = "0"
                             [imagenes] = "[
                                 '../../../../assets/fondo/banner-principal-investigacion.jpeg'

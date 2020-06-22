@@ -47,8 +47,6 @@
             .sub-menu
                 display: none
 
-
-
     li
         margin: 0 0 0 18px
         list-style-position: inside
@@ -84,17 +82,20 @@
     // .sub-link
     //     display: none
 
-@media (min-width: $anchoMinPantallaCambioHeader)
+    
 
+@media (min-width: $anchoDeCambioHeaderEscritorio)
     .hamburguesa, .toggler
         display: none
 
     .menu, .menu-wrap, .menu-wrap div, .menu-wrap div div
         height: 100%
 
+    .hamburguesa, .toggler
+        display: none
+
     .menu li
         cursor: pointer
-
 
     .menu li:hover > p
         color: $colorPrincipal
@@ -118,6 +119,8 @@
             font-weight: 400
             letter-spacing: 0
 
+
+
 @media (max-width: $anchoMaxPantallaCambioHeader)
 
     :host
@@ -125,6 +128,9 @@
 
         .container, .row
             height: 100%
+
+    .hamburguesa, .toggler
+        display: block
 
     .logo
         object-fit: contain

@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Title } from '@angular/platform-browser';
-
+import { ColeccionPaginas } from '../../coleccion-paginas'
 
 @Component({
   selector: 'app-investigacion-y-opinion',
@@ -9,12 +9,14 @@ import { Title } from '@angular/platform-browser';
 })
 export class InvestigacionYOpinionComponent implements OnInit {
 
+  tituloPagina = (new ColeccionPaginas()).obtenerNombrePagina(7);
+
   constructor(private title: Title) { 
 
   }
 
   ngOnInit(): void {
-    this.title.setTitle('ILES :: Investigación y Opinión');
+    this.title.setTitle('ILES :: ' + this.tituloPagina);
   }
 
 }

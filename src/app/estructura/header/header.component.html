@@ -2,7 +2,7 @@
 <div class="container">
     <div class="row">
         <header class="col-12">
-            <img class="logo" src='./../../../assets/logo.jpeg' routerLink='/'>
+            <img class="logo" src='./../../../assets/logo.jpeg' routerLink='{{this.coleccionPaginas.obtenerDireccion(0)}}'>
             <div class="menu-wrap">
                 <!-- <input type="checkbox" class='toggler'>
                 <div class="hamburguer">
@@ -16,25 +16,25 @@
 
                 <ul class='menu'>
                     <li>
-                        <p routerLink='/'>Inicio</p>
+                        <p routerLink='{{this.coleccionPaginas.obtenerDireccion(0)}}'>Inicio</p>
                     </li>
                     
                     <li>
-                        <p routerLink='/quienes-somos'>Acerca de Iles</p>
+                        <p routerLink='{{this.coleccionPaginas.obtenerDireccion(2)}}'>Acerca de Iles</p>
                         <ul class='sub-menu'>
-                            <li routerLink='/quienes-somos'><p class="sub-link">Quienes somos</p></li>
-                            <li routerLink='/principios-objetivos-servicios'><p class="sub-link">Principios rectores, objetivos y servicios</p></li>
-                            <li routerLink='/trayectoria-institucional'><p class="sub-link">Trayectoria institucional</p></li>
-                            <li routerLink='/presidencia-y-expertos'><p class="sub-link">Presidencia y expertos</p></li>
+                            <li routerLink='{{this.coleccionPaginas.obtenerDireccion(2)}}'><p class="sub-link">{{this.coleccionPaginas.obtenerNombrePagina(2)}}</p></li>
+                            <li routerLink='{{this.coleccionPaginas.obtenerDireccion(1)}}'><p class="sub-link">{{this.coleccionPaginas.obtenerNombrePagina(1)}}</p></li>
+                            <li routerLink='{{this.coleccionPaginas.obtenerDireccion(3)}}'><p class="sub-link">{{this.coleccionPaginas.obtenerNombrePagina(3)}}</p></li>
+                            <li routerLink='{{this.coleccionPaginas.obtenerDireccion(4)}}'><p class="sub-link">{{this.coleccionPaginas.obtenerNombrePagina(4)}}</p></li>
                         </ul>
                     </li>
 
                     <li>
-                        <p routerLink='/ciudades-del-aprendizaje'>Iniciativas</p>
+                        <p routerLink='{{this.coleccionPaginas.obtenerDireccion(5)}}'>Iniciativas</p>
                         <ul class='sub-menu'>
-                            <li routerLink='/ciudades-del-aprendizaje'><p class="sub-link">Ciudades del aprendizaje</p></li>
-                            <li routerLink='/laudato-si'><p class="sub-link">Laudato Si´</p></li>
-                            <li routerLink='/investigacion-y-opinion'><p class="sub-link">Investigación y opinión</p></li>
+                            <li routerLink='{{this.coleccionPaginas.obtenerDireccion(5)}}'><p class="sub-link">{{this.coleccionPaginas.obtenerNombrePagina(5)}}</p></li>
+                            <li routerLink='{{this.coleccionPaginas.obtenerDireccion(6)}}'><p class="sub-link">{{this.coleccionPaginas.obtenerNombrePagina(6)}}</p></li>
+                            <li routerLink='{{this.coleccionPaginas.obtenerDireccion(7)}}'><p class="sub-link">{{this.coleccionPaginas.obtenerNombrePagina(7)}}</p></li>
                         </ul>
                     </li>
                 </ul>

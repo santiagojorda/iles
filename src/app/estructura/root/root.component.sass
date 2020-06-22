@@ -5,20 +5,16 @@
 :host 
     display: block 
     height: 100% 
+    margin-bottom: $alturaFooterEscritorio
 
     .cuerpo
         padding-bottom: $espacioEntreComponentes
-
-@media (min-width: $anchoMinPantallaCambioFooter)
-    :host
-        margin-bottom: $alturaFooterEscritorio
-
-    .cuerpo
         padding-top: $alturaHeaderEscritorio
+
+        
 
 @media (max-width: $anchoMaxPantallaCambioFooter)
     :host
         margin-bottom: $alturaFooterMovil
-
     .cuerpo
-        padding-top: $alturaHeaderMovil
+        padding-top: $alturaHeaderMovil !important

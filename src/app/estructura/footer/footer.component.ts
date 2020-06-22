@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { ColeccionPaginas } from '../../coleccion-paginas'
 
 @Component({
   selector: 'app-footer',
@@ -6,6 +7,9 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./footer.component.sass']
 })
 export class FooterComponent implements OnInit {
+
+  coleccionPaginas = new ColeccionPaginas();
+
 
   constructor() { }
 

@@ -8,18 +8,19 @@ import { PresidenciaYExpertosComponent } from './paginas/presidencia-y-expertos/
 import { CiudadesDelAprendizajeComponent } from './paginas/ciudades-del-aprendizaje/ciudades-del-aprendizaje.component';
 import { LaudatoSiComponent } from './paginas/laudato-si/laudato-si.component';
 import { InvestigacionYOpinionComponent } from './paginas/investigacion-y-opinion/investigacion-y-opinion.component';
+import { ColeccionPaginas } from './coleccion-paginas';
 
+var coleccion = new ColeccionPaginas();
 
 const routes: Routes = [
-  { path: '', component: InicioComponent },
-  { path: 'principios-objetivos-servicios', component: PrincipiosObjetivosServiciosComponent},
-  { path: 'quienes-somos', component: QuienesSomosComponent},
-  { path: 'trayectoria-institucional', component: TrayectoriaInstitucionalComponent},
-  { path: 'presidencia-y-expertos', component: PresidenciaYExpertosComponent},
-  { path: 'ciudades-del-aprendizaje', component: CiudadesDelAprendizajeComponent},
-  { path: 'laudato-si', component: LaudatoSiComponent},
-  { path: 'investigacion-y-opinion', component: InvestigacionYOpinionComponent},
-
+  { path: coleccion.obtenerDireccionSinBarra(0), component: InicioComponent },
+  { path: coleccion.obtenerDireccionSinBarra(1), component: PrincipiosObjetivosServiciosComponent},
+  { path: coleccion.obtenerDireccionSinBarra(2), component: QuienesSomosComponent},
+  { path: coleccion.obtenerDireccionSinBarra(3), component: TrayectoriaInstitucionalComponent},
+  { path: coleccion.obtenerDireccionSinBarra(4), component: PresidenciaYExpertosComponent},
+  { path: coleccion.obtenerDireccionSinBarra(5), component: CiudadesDelAprendizajeComponent},
+  { path: coleccion.obtenerDireccionSinBarra(6), component: LaudatoSiComponent},
+  { path: coleccion.obtenerDireccionSinBarra(7), component: InvestigacionYOpinionComponent},
 ];
  
 @NgModule({
