@@ -21,11 +21,13 @@ export class MenuFlotanteComponent implements OnInit {
 
   esteArticuloSeOcultara(otraPagina : Pagina){
 
+    var seOcultaraEsteArticulo = true;
+
     if (otraPagina && this.paginaAOcultar){
-      return this.paginaAOcultar.noSonIguales(otraPagina)
+      seOcultaraEsteArticulo = this.paginaAOcultar.noSonIguales(otraPagina)
     }
     
-    return true;
+    return seOcultaraEsteArticulo;
 
   }
 
