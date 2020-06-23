@@ -1,8 +1,7 @@
 import { Component, OnInit } from '@angular/core';
-import { ColeccionPaginas } from '../../coleccion-paginas'
+import * as paginas from '../../coleccion-paginas'
 
 declare var $: any;
-
 
 @Component({
   selector: 'app-header',
@@ -12,9 +11,7 @@ declare var $: any;
 })
 
 export class HeaderComponent implements OnInit {
-
-  coleccionPaginas = new ColeccionPaginas();
-
+  coleccionPaginas = new paginas.ColeccionPaginas();
   anchoCambioVistaMovil = 700;
   menuEstaDesplegado = false;
 

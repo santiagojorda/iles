@@ -1,16 +1,17 @@
 
 import { Pagina } from './pagina';
 
-import { PrincipiosObjetivosServiciosComponent } from './paginas/principios-objetivos-servicios/principios-objetivos-servicios.component';
-import { InicioComponent } from './paginas/inicio/inicio.component';
-import { QuienesSomosComponent } from './paginas/quienes-somos/quienes-somos.component';
-import { TrayectoriaInstitucionalComponent } from './paginas/trayectoria-institucional/trayectoria-institucional.component';
-import { PresidenciaYExpertosComponent } from './paginas/presidencia-y-expertos/presidencia-y-expertos.component';
-import { CiudadesDelAprendizajeComponent } from './paginas/ciudades-del-aprendizaje/ciudades-del-aprendizaje.component';
-import { LaudatoSiComponent } from './paginas/laudato-si/laudato-si.component';
-import { InvestigacionYOpinionComponent } from './paginas/investigacion-y-opinion/investigacion-y-opinion.component';
+// const INICIO_ID = 0;
+// const PRINCIPIOS_ID = 1;
+// const QUIENES_SOMOS_ID = 2;
+// const TRAYECTORIA_ID = 3;
+// const PRESIDENCIA_ID = 4;
+// const CIUDADES_ID = 5;
+// const LAUDATOS_ID = 6;
+// const INVESTIGACION_ID = 7;
 
 export class ColeccionPaginas {
+
 
     paginas : Pagina[] = new Array();
 
