@@ -45,4 +45,8 @@ export class ColeccionPaginas {
     obtenerDireccionSinBarra(index : number){
         return this.paginas[index].obtenerDireccionSinBarra();
     }
+
+    obtenerPagina(index : number){
+        return this.paginas[index];
+    }
 }

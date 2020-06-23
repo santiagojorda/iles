@@ -9,7 +9,8 @@ import { ColeccionPaginas } from 'src/app/coleccion-paginas';
 })
 export class LaudatoSiComponent implements OnInit {
 
-  tituloPagina = (new ColeccionPaginas()).obtenerNombrePagina(6);
+  coleccionPaginas = new ColeccionPaginas();
+  tituloPagina = this.coleccionPaginas.obtenerNombrePagina(6);
 
   constructor(private title: Title) { 
 

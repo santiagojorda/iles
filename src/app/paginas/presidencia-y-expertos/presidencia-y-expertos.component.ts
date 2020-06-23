@@ -9,8 +9,8 @@ import { ColeccionPaginas } from '../../coleccion-paginas'
 })
 export class PresidenciaYExpertosComponent implements OnInit {
 
-  tituloPagina = (new ColeccionPaginas()).obtenerNombrePagina(4);
-
+  coleccionPaginas = new ColeccionPaginas();
+  tituloPagina = this.coleccionPaginas.obtenerNombrePagina(4);
 
   constructor(private title: Title) { 
 

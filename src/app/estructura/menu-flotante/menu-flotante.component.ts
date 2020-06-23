@@ -1,5 +1,6 @@
 import { Component, OnInit, Input } from '@angular/core';
-import { ColeccionArticulosMenu } from './coleccion-articulos-menu';
+import { ColeccionPaginas } from '../../coleccion-paginas'
+import { Pagina } from '../../pagina'
 
 @Component({
   selector: 'app-menu-flotante',
@@ -8,41 +9,24 @@ import { ColeccionArticulosMenu } from './coleccion-articulos-menu';
 })
 export class MenuFlotanteComponent implements OnInit {
 
-  coleccionArticulos = new ColeccionArticulosMenu();
+  coleccionPaginas = new ColeccionPaginas();
 
-  @Input() articulosAOcultar : string[];
-  // @Input() articulosAOcultar : string;
-
+  @Input() paginaAOcultar : Pagina = null;
 
   constructor() { 
   }
   
   ngOnInit(): void {
-    this.eliminarArticulos();
-    // this.imprimirArticulos();
   }
 
-  // imprimirArticulos(){
-  //   console.log(this.coleccionArticulos.obtenerVista(0));
-  // }
+  esteArticuloSeOcultara(otraPagina : Pagina){
 
-  eliminarArticulos(){
-    for(let i in this.articulosAOcultar){
-      this.coleccionArticulos.eliminarArticulo(this.articulosAOcultar[i]);
+    if (otraPagina && this.paginaAOcultar){
+      return this.paginaAOcultar.noSonIguales(otraPagina)
     }
+    
+    return true;
+
   }
-
-  // ocultarArticulos(){
-  //   if(this.articulosAOcultar == 'Ciudades')
-  //     this.hayCiudades = false;
-  //   else if (this.articulosAOcultar == "Laudatos")
-  //     this.hayLaudatos = false;
-  //   else if (this.articulosAOcultar == "Investigacion")
-  //     this.hayInvestigacion = false
-  // }
-
-  // hay(articuloOculto){
-  //   return articuloOculto;
-  // }
 
 }

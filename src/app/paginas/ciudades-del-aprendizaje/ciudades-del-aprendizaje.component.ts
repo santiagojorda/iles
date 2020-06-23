@@ -9,9 +9,8 @@ import { ColeccionPaginas } from 'src/app/coleccion-paginas';
 })
 export class CiudadesDelAprendizajeComponent implements OnInit {
 
-  tituloPagina = (new ColeccionPaginas()).obtenerNombrePagina(5);
-
-  articulosAOcultar = ["ciudades", "investigacion"];
+  coleccionPaginas = new ColeccionPaginas();
+  tituloPagina = this.coleccionPaginas.obtenerNombrePagina(5);
 
   constructor(private title: Title) {
   }

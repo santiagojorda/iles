@@ -1,4 +1,5 @@
 import { Component, OnInit, Input } from '@angular/core';
+import { Pagina } from 'src/app/pagina';
 
 @Component({
   selector: 'app-articulo-con-menu-flotante',
@@ -8,7 +9,7 @@ import { Component, OnInit, Input } from '@angular/core';
 export class ArticuloConMenuFlotanteComponent implements OnInit {
 
   @Input() titulo: string = '';
-  @Input() articulosAOcultarMenu : string[];
+  @Input() paginaAOcultar : Pagina = null;
 
   constructor() { }
 

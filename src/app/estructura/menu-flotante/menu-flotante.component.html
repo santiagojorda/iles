@@ -5,10 +5,7 @@
     <h5>Artículos</h5>
     <hr>
 
-    <div class="articulo" *ngFor="let articulo of coleccionArticulos.articulos " [outerHTML]='articulo.modeloHTML'>
-    </div>
-
-    <div routerLink="/ciudades-del-aprendizaje" class="link" tabindex="0">
+    <div routerLink="{{coleccionPaginas.obtenerDireccion(5)}}" *ngIf="esteArticuloSeOcultara(coleccionPaginas.obtenerPagina(5))" class="link" tabindex="0">
         <h6>Ciudades del aprendizaje:</h6>
         <p>Desde el año 2015, el ILES ha estado realizando un trabajo de desarrollo y seguimiento del programa “Villa María.</p>
         <ul>
@@ -21,15 +18,15 @@
     </div>
 
     <!---->
-    <div routerLink="/laudato-si" class="link" tabindex="0">
+    <div routerLink="{{coleccionPaginas.obtenerDireccion(6)}}" *ngIf="esteArticuloSeOcultara(coleccionPaginas.obtenerPagina(6))" class="link" tabindex="0">
         <img src="/../../../../assets/fasciculos/papa2.png" alt="">
         <h6>Laudato Si´</h6>
         <p>Fascículos de la carta encíclica del Papa Francisco sobre el medio ambiente.</p>
     </div>
 
     <!---->
-    <div routerLink="/investigacion-y-opinion"class="link" tabindex="0">
-        <hr>
+    <div routerLink="{{coleccionPaginas.obtenerDireccion(7)}}" *ngIf="esteArticuloSeOcultara(coleccionPaginas.obtenerPagina(7))" class="link" tabindex="0">
+        <hr *ngIf="esteArticuloSeOcultara(coleccionPaginas.obtenerPagina(6))">
         <!---->
         <h6>Investigación y Opinión</h6>
         <p>Recopilación de artículos de opinión y trabajos de investigación de expertos del ILES.</p>

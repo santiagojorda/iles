@@ -24,4 +24,12 @@ export class Pagina{
         return this.direccion;
     }
 
+    sonIguales(otraPagina : Pagina){
+        return this.nombrePagina == otraPagina.obtenerNombrePagina(); 
+    }
+
+    noSonIguales(otraPagina : Pagina){
+        return !this.sonIguales(otraPagina);
+    }
+
 }

@@ -12,6 +12,7 @@ export class QuienesSomosComponent implements OnInit {
 
   coleccionPaginas = new ColeccionPaginas; 
   tituloPagina = this.coleccionPaginas.obtenerNombrePagina(2);
+  
 
   constructor(private title: Title) {
 
