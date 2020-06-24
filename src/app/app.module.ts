@@ -1,5 +1,6 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import { HashLocationStrategy, LocationStrategy } from '@angular/common';
 
 import { AppRoutingModule } from './app-routing.module';
 import { RootComponent } from './estructura/root/root.component';
@@ -52,7 +53,7 @@ import { InvestigacionYOpinionComponent } from './paginas/investigacion-y-opinio
     AppRoutingModule,
     NgbModule
   ],
-  providers: [],
+  providers: [  {provide: LocationStrategy, useClass: HashLocationStrategy}  ],
   bootstrap: [RootComponent]
 })
 export class AppModule { }
