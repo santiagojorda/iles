@@ -9,32 +9,32 @@
                     <div></div> 
                 </div> -->
 
-                <input type="radio" type="checkbox" class="toggler">
+                <input #toggler type="radio" (click)='clickCheckBox()' type="checkbox" class="toggler">
                 <div class="hamburguesa">
                     <div></div>
                 </div>
 
-                <ul class='menu'>
+                <ul class='menu' *ngIf='esVistaEscritorio() || (esVistaMovil() && estaDesplegado())' >
                     <li>
-                        <p routerLink='{{this.coleccionPaginas.obtenerDireccion(0)}}'>Inicio</p>
+                        <p routerLink='{{this.coleccionPaginas.obtenerDireccion(0)}}' (click)='clickCheckBox()'>Inicio</p>
                     </li>
                     
                     <li>
-                        <p routerLink='{{this.coleccionPaginas.obtenerDireccion(2)}}'>Acerca de Iles</p>
+                        <p routerLink='{{this.coleccionPaginas.obtenerDireccion(2)}}' (click)='clickCheckBox()'>Acerca de Iles</p>
                         <ul class='sub-menu'>
-                            <li routerLink='{{this.coleccionPaginas.obtenerDireccion(2)}}'><p class="sub-link">{{this.coleccionPaginas.obtenerNombrePagina(2)}}</p></li>
-                            <li routerLink='{{this.coleccionPaginas.obtenerDireccion(1)}}'><p class="sub-link">{{this.coleccionPaginas.obtenerNombrePagina(1)}}</p></li>
-                            <li routerLink='{{this.coleccionPaginas.obtenerDireccion(3)}}'><p class="sub-link">{{this.coleccionPaginas.obtenerNombrePagina(3)}}</p></li>
-                            <li routerLink='{{this.coleccionPaginas.obtenerDireccion(4)}}'><p class="sub-link">{{this.coleccionPaginas.obtenerNombrePagina(4)}}</p></li>
+                            <li routerLink='{{this.coleccionPaginas.obtenerDireccion(2)}}' (click)='clickCheckBox()'><p class="sub-link">{{this.coleccionPaginas.obtenerNombrePagina(2)}}</p></li>
+                            <li routerLink='{{this.coleccionPaginas.obtenerDireccion(1)}}' (click)='clickCheckBox()'><p class="sub-link">{{this.coleccionPaginas.obtenerNombrePagina(1)}}</p></li>
+                            <li routerLink='{{this.coleccionPaginas.obtenerDireccion(3)}}' (click)='clickCheckBox()'><p class="sub-link">{{this.coleccionPaginas.obtenerNombrePagina(3)}}</p></li>
+                            <li routerLink='{{this.coleccionPaginas.obtenerDireccion(4)}}' (click)='clickCheckBox()'><p class="sub-link">{{this.coleccionPaginas.obtenerNombrePagina(4)}}</p></li>
                         </ul>
                     </li>
 
                     <li>
                         <p routerLink='{{this.coleccionPaginas.obtenerDireccion(5)}}'>Iniciativas</p>
                         <ul class='sub-menu'>
-                            <li routerLink='{{this.coleccionPaginas.obtenerDireccion(5)}}'><p class="sub-link">{{this.coleccionPaginas.obtenerNombrePagina(5)}}</p></li>
-                            <li routerLink='{{this.coleccionPaginas.obtenerDireccion(6)}}'><p class="sub-link">{{this.coleccionPaginas.obtenerNombrePagina(6)}}</p></li>
-                            <li routerLink='{{this.coleccionPaginas.obtenerDireccion(7)}}'><p class="sub-link">{{this.coleccionPaginas.obtenerNombrePagina(7)}}</p></li>
+                            <li routerLink='{{this.coleccionPaginas.obtenerDireccion(5)}}' (click)='clickCheckBox()'><p class="sub-link">{{this.coleccionPaginas.obtenerNombrePagina(5)}}</p></li>
+                            <li routerLink='{{this.coleccionPaginas.obtenerDireccion(6)}}' (click)='clickCheckBox()'><p class="sub-link">{{this.coleccionPaginas.obtenerNombrePagina(6)}}</p></li>
+                            <li routerLink='{{this.coleccionPaginas.obtenerDireccion(7)}}' (click)='clickCheckBox()'><p class="sub-link">{{this.coleccionPaginas.obtenerNombrePagina(7)}}</p></li>
                         </ul>
                     </li>
                 </ul>

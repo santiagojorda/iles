@@ -23,6 +23,26 @@
         background: #000
         margin: 10px 0 15px
 
+    .listaIndice
+        padding-left: 15px
+        margin-bottom: 18px !important
+        margin: 0
+
+        li
+            font-size: 12px
+
+        li:not(:last-child)
+            margin-bottom: 5px
+
+    p, li
+        font-size: 12px
+
+
+    li:hover, .link:hover h6, .link:hover p
+        color: $colorContraste
+        transition: .5s
+        cursor: pointer
+
     .link 
         cursor: pointer
 
@@ -34,15 +54,11 @@
         p
             padding-top: 5px
             margin-bottom: 7px
-            font-size: 12px
 
         ul
             padding-left: 25px
             margin-bottom: 0
             padding-bottom: 0
-
-            li
-                font-size: 12px
 
         img
             width: 100%
