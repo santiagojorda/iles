@@ -3,7 +3,6 @@
 
 :host
     background: $colorPrincipal 
-    height: $alturaFooterEscritorio 
     display: flex 
     flex-direction: column 
     justify-content: space-between 
@@ -73,16 +72,27 @@
         color: #bdbdbd
         margin-top: 20px
 
+
+
+
 @media (min-width: $anchoMinPantallaCambioFooter)
 
     .logo
         border-right: .1px solid #fff
+
+    .host 
+        height: $alturaAutorFooterEscritorio
         
     .autor
         height: $alturaAutorFooterEscritorio
 
 
 @media (max-width: $anchoMaxPantallaCambioFooter)
+
+
+    .col-md-3
+        flex: 0 0 100%
+        max-width: 100%
 
     :host 
         height: $alturaFooterMovil
