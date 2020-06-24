@@ -53,7 +53,7 @@ import { InvestigacionYOpinionComponent } from './paginas/investigacion-y-opinio
     AppRoutingModule,
     NgbModule
   ],
-  providers: [  {provide: LocationStrategy, useClass: HashLocationStrategy}  ],
+  providers: [],
   bootstrap: [RootComponent]
 })
 export class AppModule { }
