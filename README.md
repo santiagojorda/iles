@@ -1,5 +1,5 @@
 # ILES
-Instituto Lationamericano de Estudios Sociales
+Desarrollo web: Instituto Lationamericano de Estudios Sociales
 
 
 Una vez clonado el repositorio, hay que ejecutar `npm install` para instalar los paquetes de los cuales depende. 
